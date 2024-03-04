@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Quicksand";
+  background: #333;
+  color: #fff;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  background: #eff0f0;
+  color: black;
+}
+#head{
+width: 1450px;
+margin: 0 auto;
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: 50px;
+}
+
+.header1 .logo img {
+  height: 30px;
+}
+
+.header1 .nav-links a {
+  text-decoration: none;
+  color: black;
+  margin-inline: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.header2 {
+  padding: 20px 0;
+  height: 40px;
+}
+
+.header2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-inline-end: 50px;
+}
+#content {
+  height: calc(100% - 90px);
+  width: 100%;
+}
+.tags-container {
+  height: 50%;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 30%;
+  overflow-y: hidden;
+}
+.tags-container .elm {
+  flex-shrink: 0;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.tags-container .elm .tag {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-top: -8px;
+}
+
+.elm .elm-text {
+  display: flex;
+  flex-direction: column;
+}
+.elm .elm-text h3 {
+  font-weight: 500;
+  color: #393939;
+}
+.elm .elm-text p {
+  font-size: 8rem;
+  font-weight: 300;
+}
+.tags-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tags-container::-webkit-scrollbar-thumb {
+  background: orangered;
+  border-radius: 10px;
+}
+
+.tags-container::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+.image-slider {
+  height: 50%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.image-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.image-slider img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
