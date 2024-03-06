@@ -166,7 +166,7 @@ nav .logo p {
   width: 100%;
   height: 100%;
   display: inline-block;
-  /* animation: profile-scroll 8s linear infinite; */
+  animation: profile-scroll 8s linear infinite;
 }
 
 .scroller-item {
@@ -527,7 +527,7 @@ nav .logo p {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-stroke: 1px black;
   color: transparent;
-  /* animation: scroll-text 5s linear infinite; */
+  animation: scroll-text 5s linear infinite;
 }
 
 @keyframes scroll-text{
@@ -600,9 +600,20 @@ footer div:not(.footer-icons) {
   position: relative;
 }
 
-/* .div1 h1::after{
-co
-} */
+.div1 h1::after{
+content: "©";
+font-size: 1rem;
+position: absolute;
+}
+
+.div1 h1::before{
+  content: "model management";
+  font-weight: 100;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 30%;
+  left: 19%;
+}
 
 .div2 {
   grid-area: d2;
@@ -627,6 +638,7 @@ co
 
 .div4 .footer-icons i {
   font-size: 1.5rem;
+  margin-right: 20px;
 }
 
 .div4 p {
